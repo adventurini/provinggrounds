@@ -40,14 +40,15 @@ body::before {
   opacity: 0.35;
 }
 
-/* ── NAV ── */
+/* ── NAV (light bar) ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(10,10,10,0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  isolation: isolate;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e6e3;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   height: 64px;
   display: flex;
   align-items: center;
@@ -69,6 +70,7 @@ nav {
   align-items: center;
   flex-shrink: 0;
   line-height: 0;
+  background: transparent;
 }
 
 .nav-logo img {
@@ -77,6 +79,8 @@ nav {
   max-width: min(48vw, 200px);
   object-fit: contain;
   display: block;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -87,7 +91,7 @@ nav {
 }
 
 .nav-links a {
-  color: var(--muted);
+  color: #4a4a48;
   text-decoration: none;
   font-family: var(--font-display);
   font-weight: 700;
@@ -100,9 +104,14 @@ nav {
   position: relative;
 }
 
-.nav-links a:hover, .nav-links a.active {
-  color: var(--white);
-  background: rgba(255,255,255,0.05);
+.nav-links a:hover {
+  color: #0a0a0a;
+  background: rgba(10, 10, 10, 0.06);
+}
+
+.nav-links a.active {
+  color: #0a0a0a;
+  background: rgba(200, 16, 46, 0.08);
 }
 
 .nav-links a.active::after {
@@ -120,6 +129,22 @@ nav {
   border-radius: 2px;
 }
 
+.nav-links a:focus-visible:not(.nav-cta),
+.nav-phone:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.nav-cta:focus-visible {
+  outline: 2px solid #0a0a0a;
+  outline-offset: 2px;
+}
+
+.social-link:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
 .nav-cta:hover { background: var(--red-glow) !important; }
 
 .nav-phone {
@@ -127,9 +152,14 @@ nav {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.1em;
-  color: var(--gold);
+  color: var(--red);
   text-decoration: none;
   margin-left: 12px;
+  white-space: nowrap;
+}
+
+.nav-phone:hover {
+  color: var(--red-glow);
 }
 
 /* Mobile nav toggle */
@@ -145,7 +175,7 @@ nav {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--white);
+  background: #1a1a1a;
   transition: all 0.3s;
 }
 
@@ -761,10 +791,10 @@ p { color: #b0aca6; line-height: 1.75; }
   max-width: 560px;
 }
 
-/* ── FOOTER ── */
+/* ── FOOTER (light) ── */
 footer {
-  background: var(--deep);
-  border-top: 1px solid var(--border);
+  background: #ffffff;
+  border-top: 1px solid #e8e6e3;
   padding: 64px 32px 40px;
   margin-top: 96px;
 }
@@ -786,6 +816,7 @@ footer {
   margin-bottom: 16px;
   line-height: 0;
   text-decoration: none;
+  background: transparent;
 }
 
 .footer-logo img {
@@ -794,13 +825,15 @@ footer {
   max-width: min(100%, 260px);
   object-fit: contain;
   display: block;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .footer-brand p {
   font-size: 13px;
-  color: var(--muted);
+  color: #5c5c58;
   line-height: 1.7;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .footer-col h4 {
@@ -809,7 +842,7 @@ footer {
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--white);
+  color: #0a0a0a;
   margin-bottom: 18px;
 }
 
@@ -821,16 +854,19 @@ footer {
 }
 
 .footer-col a {
-  color: var(--muted);
+  color: #5c5c58;
   text-decoration: none;
   font-size: 13px;
+  font-weight: 500;
   transition: color 0.2s;
 }
 
-.footer-col a:hover { color: var(--white); }
+.footer-col a:hover {
+  color: var(--red);
+}
 
 .footer-bottom {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #e8e6e3;
   padding-top: 28px;
   display: flex;
   align-items: center;
@@ -839,33 +875,41 @@ footer {
 
 .footer-bottom p {
   font-size: 12px;
-  color: #555;
+  color: #6a6a66;
+  line-height: 1.5;
 }
 
 .social-links {
   display: flex;
-  gap: 12px;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .social-link {
-  width: 36px;
-  height: 36px;
-  background: var(--charcoal);
-  border: 1px solid var(--border);
-  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  background: #f5f4f2;
+  border: 1px solid #e0ddd8;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: var(--muted);
-  font-size: 14px;
-  transition: all 0.2s;
+  color: #2a2a28;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.social-link svg {
+  flex-shrink: 0;
+  display: block;
 }
 
 .social-link:hover {
   background: var(--red);
   border-color: var(--red);
-  color: var(--white);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 /* ── LEGEND ── */
@@ -986,8 +1030,9 @@ footer {
     flex-direction: column;
     position: fixed;
     top: 64px; left: 0; right: 0;
-    background: var(--deep);
-    border-bottom: 1px solid var(--border);
+    background: #ffffff;
+    border-bottom: 1px solid #e8e6e3;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
     padding: 16px;
     gap: 2px;
   }
