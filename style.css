@@ -149,19 +149,6 @@ nav {
   transition: all 0.3s;
 }
 
-.disciplines.facility-grid {
-  margin-top: 48px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 900px) {
-  .disciplines.facility-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 480px) {
-  .disciplines.facility-grid { grid-template-columns: 1fr; }
-}
-
 /* ── PAGE WRAPPER ── */
 .page { padding-top: 64px; }
 
@@ -524,6 +511,19 @@ p { color: #b0aca6; line-height: 1.75; }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--red);
+}
+
+.disciplines.facility-grid {
+  margin-top: 48px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .disciplines.facility-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .disciplines.facility-grid { grid-template-columns: 1fr; }
 }
 
 /* ── DIVIDER ── */
