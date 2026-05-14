@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navEl.innerHTML = `
       <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-          Proving<span>Grounds</span>
+          <img src="images/logo.png" width="220" height="88" alt="Proving Grounds Fight Club">
         </a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-brand">
-            <h3>Proving<span>Grounds</span></h3>
+            <a href="index.html" class="footer-logo"><img src="images/logo.png" width="240" height="96" alt="Proving Grounds Fight Club"></a>
             <p>Macomb County's premier martial arts academy. Home of Michigan's first Black Belt World Champion. 6,000 sq ft of world-class training.</p>
             <br>
             <div class="social-links">
