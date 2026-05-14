@@ -238,9 +238,11 @@ nav {
   width: 100%;
 }
 
-/* ── FULL-WIDTH PHOTO STRIP ── */
+/* ── INSET PHOTO (native resolution — avoids upscaling small assets) ── */
 .media-strip {
-  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 28px 32px 36px;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--black);
@@ -248,10 +250,11 @@ nav {
 
 .media-strip img {
   width: 100%;
-  height: clamp(220px, 42vw, 480px);
-  object-fit: cover;
-  object-position: center 38%;
+  max-width: 680px;
+  height: auto;
   display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 /* ── SPLIT + INLINE PHOTOS ── */
