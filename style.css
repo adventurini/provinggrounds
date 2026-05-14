@@ -27,16 +27,17 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
 }
 
-/* ── NOISE OVERLAY ── */
+/* ── NOISE OVERLAY (must stay BELOW nav / page / footer) ── */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   pointer-events: none;
-  z-index: 9999;
+  z-index: 0;
   opacity: 0.35;
 }
 
@@ -44,7 +45,7 @@ body::before {
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
+  z-index: 2000;
   isolation: isolate;
   background: #ffffff;
   border-bottom: 1px solid #e8e6e3;
@@ -74,15 +75,11 @@ nav {
 }
 
 .nav-logo img {
+  display: block;
   height: 48px;
   width: auto;
-  max-width: min(52vw, 220px);
-  aspect-ratio: 480 / 320;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
-  background: transparent;
-  image-rendering: auto;
+  max-height: 48px;
+  max-width: min(200px, 46vw);
 }
 
 .nav-links {
@@ -182,7 +179,11 @@ nav {
 }
 
 /* ── PAGE WRAPPER ── */
-.page { padding-top: 64px; }
+.page {
+  padding-top: 64px;
+  position: relative;
+  z-index: 1;
+}
 
 /* ── HERO ── */
 .hero {
@@ -802,6 +803,8 @@ footer {
   border-top: 1px solid #e8e6e3;
   padding: 64px 32px 40px;
   margin-top: 96px;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-inner {
@@ -825,15 +828,11 @@ footer {
 }
 
 .footer-logo img {
+  display: block;
   height: 72px;
   width: auto;
-  max-width: min(100%, 280px);
-  aspect-ratio: 432 / 288;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
-  background: transparent;
-  image-rendering: auto;
+  max-height: 72px;
+  max-width: min(280px, 85vw);
 }
 
 .footer-brand p {
@@ -1048,6 +1047,7 @@ footer {
 
   .nav-logo img {
     height: 40px;
+    max-height: 40px;
     max-width: min(48vw, 180px);
   }
 
