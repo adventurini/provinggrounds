@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Proving Grounds Jiu Jitsu in Shelby Township, MI. Call us, email us, or stop by — we'll answer any question you have.">
+  <title>Contact — Proving Grounds | Shelby Township, MI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .submit-btn {
+      width: 100%;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .map-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--charcoal);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+<nav id="pg-nav"></nav>
+
+<div class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-eyebrow fade-up fade-up-1">Get in Touch</div>
+      <h1 class="fade-up fade-up-2">We're Ready<br>When You Are.</h1>
+      <p class="fade-up fade-up-3">Questions about classes, pricing, kids programs, or anything else — reach out. We'll get back to you fast.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div>
+        <div class="section-eyebrow">Send a Message</div>
+        <h2 style="font-size:36px; margin-bottom:32px;">Drop Us<br>a Line.</h2>
+        <form action="mailto:Contact@provinggroundsjj.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label>First Name</label>
+              <input type="text" name="first_name" placeholder="John">
+            </div>
+            <div class="form-field">
+              <label>Last Name</label>
+              <input type="text" name="last_name" placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="john@email.com">
+          </div>
+          <div class="form-field">
+            <label>Phone (optional)</label>
+            <input type="tel" name="phone" placeholder="586-555-0100">
+          </div>
+          <div class="form-field">
+            <label>I'm interested in</label>
+            <select name="interest">
+              <option value="">Select a discipline...</option>
+              <option>Brazilian Jiu Jitsu – Adults</option>
+              <option>Brazilian Jiu Jitsu – Kids</option>
+              <option>Muay Thai Kickboxing</option>
+              <option>MMA</option>
+              <option>Multiple disciplines</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us about yourself — experience level, goals, questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">Send Message →</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div>
+        <div class="section-eyebrow">Find Us</div>
+        <h2 style="font-size:36px; margin-bottom:40px;">Come Visit<br>the Gym.</h2>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>46825 Hayes Rd<br>Shelby Township, MI 48315</p>
+            <a href="https://maps.google.com/?q=46825+Hayes+Rd+Shelby+Township+MI+48315" target="_blank" style="color:var(--red); text-decoration:none; font-size:12px; font-family:var(--font-display); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-top:6px; display:block;">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:5868948640" style="color:var(--muted); text-decoration:none; font-size:14px;">586-894-8640</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:Contact@provinggroundsjj.com" style="color:var(--muted); text-decoration:none; font-size:14px;">Contact@provinggroundsjj.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Office Hours</h4>
+            <p>Mon–Fri: By class schedule<br>Sat–Sun: Morning classes</p>
+          </div>
+        </div>
+
+        <div style="margin-top:32px; padding:24px; background:rgba(200,16,46,0.08); border:1px solid rgba(200,16,46,0.2); border-radius:2px;">
+          <div style="font-family:var(--font-display); font-weight:900; font-size:16px; text-transform:uppercase; letter-spacing:0.08em; color:var(--white); margin-bottom:8px;">Free Trial Available</div>
+          <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Not sure if it's right for you? Your first class is completely free, no commitment required.</p>
+          <a href="https://provinggroundsjj.sites.zenplanner.com/freeTrial.cfm" target="_blank" class="btn btn-primary" style="font-size:12px; padding:10px 20px;">Claim Free Trial →</a>
+        </div>
+
+        <div style="margin-top:24px; display:flex; gap:12px;">
+          <a href="https://www.facebook.com/profile.php?id=100072875904135" target="_blank" class="social-link" style="flex:1; width:auto; justify-content:center; gap:8px;">
+            <span style="font-size:12px; font-family:var(--font-display); font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/p/CUIM5S4F5EY/" target="_blank" class="social-link" style="flex:1; width:auto; justify-content:center; gap:8px;">
+            <span style="font-size:12px; font-family:var(--font-display); font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-placeholder">
+      <div style="font-size:48px;">🗺️</div>
+      <div style="font-family:var(--font-display); font-weight:900; font-size:18px; text-transform:uppercase; letter-spacing:0.1em; color:var(--white);">46825 Hayes Rd, Shelby Township MI</div>
+      <a href="https://maps.google.com/?q=46825+Hayes+Rd+Shelby+Township+MI+48315" target="_blank" class="btn btn-primary">Open in Google Maps →</a>
+    </div>
+  </section>
+
+  <!-- SERVING AREA -->
+  <div style="background: var(--deep); border-top: 1px solid var(--border); padding: 32px; text-align: center; margin-top: 32px;">
+    <p style="font-family: var(--font-display); font-weight:600; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted);">
+      Proudly serving · Shelby Township · Macomb Township · Sterling Heights · Clinton Township · Utica · Chesterfield Township
+    </p>
+  </div>
+
+</div>
+
+<footer id="pg-footer"></footer>
+<script src="shared.js"></script>
+</body>
+</html>

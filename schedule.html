@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proving Grounds class schedule — BJJ, Muay Thai, MMA for kids and adults in Shelby Township, MI.">
+  <title>Schedule — Proving Grounds | Shelby Township, MI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .schedule-table-wrap {
+      overflow-x: auto;
+      margin-top: 48px;
+    }
+    table {
+      width: 100%;
+      min-width: 700px;
+      border-collapse: collapse;
+    }
+    thead th {
+      background: var(--red);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 16px;
+      text-align: center;
+      color: white;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    thead th:first-child { text-align: left; background: var(--charcoal); border-right: 2px solid var(--border); }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:nth-child(even) { background: var(--deep); }
+    tbody td {
+      padding: 12px 16px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      border-right: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody td:first-child {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--white);
+      text-align: left;
+      border-right: 2px solid var(--border);
+      white-space: nowrap;
+    }
+    .class-chip {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 2px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin: 2px;
+      white-space: nowrap;
+    }
+    .chip-bjj { background: rgba(59,130,246,0.15); color: #7ab0f5; border: 1px solid rgba(59,130,246,0.25); }
+    .chip-mt { background: rgba(245,158,11,0.15); color: #f5c060; border: 1px solid rgba(245,158,11,0.25); }
+    .chip-mma { background: rgba(200,16,46,0.15); color: #e05070; border: 1px solid rgba(200,16,46,0.25); }
+    .chip-kids { background: rgba(16,185,129,0.15); color: #50d0a0; border: 1px solid rgba(16,185,129,0.25); }
+    .note-box {
+      background: var(--charcoal);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      padding: 20px 24px;
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--muted);
+      border-radius: 0 2px 2px 0;
+    }
+    .note-box strong { color: var(--white); font-family: var(--font-display); font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+<nav id="pg-nav"></nav>
+
+<div class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="section-eyebrow fade-up fade-up-1">Class Schedule</div>
+      <h1 class="fade-up fade-up-2">Train Every<br>Day.</h1>
+      <p class="fade-up fade-up-3">Morning, evening, weekends — we have classes that fit your life. BJJ, Muay Thai, and MMA for all ages and experience levels.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#3b82f6;"></div>Brazilian Jiu Jitsu</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f59e0b;"></div>Muay Thai</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--red);"></div>MMA</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#10b981;"></div>Kids</div>
+    </div>
+
+    <div class="schedule-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6:00 AM</td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td>—</td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td>—</td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>9:00 AM</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="class-chip chip-bjj">BJJ</span><br><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td><span class="class-chip chip-bjj">Open Mat</span></td>
+          </tr>
+          <tr>
+            <td>5:00 PM</td>
+            <td><span class="class-chip chip-kids">Kids BJJ</span></td>
+            <td><span class="class-chip chip-kids">Kids MT</span></td>
+            <td><span class="class-chip chip-kids">Kids BJJ</span></td>
+            <td><span class="class-chip chip-kids">Kids MT</span></td>
+            <td><span class="class-chip chip-kids">Kids BJJ</span></td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>6:00 PM</td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td><span class="class-chip chip-bjj">BJJ</span></td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>7:00 PM</td>
+            <td><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td><span class="class-chip chip-bjj">BJJ</span><br><span class="class-chip chip-mma">MMA</span></td>
+            <td><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td><span class="class-chip chip-bjj">BJJ</span><br><span class="class-chip chip-mma">MMA</span></td>
+            <td><span class="class-chip chip-mt">Muay Thai</span></td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note-box">
+      <strong>Schedule Notice</strong><br>
+      This schedule is representative. Classes may vary seasonally. For the most current schedule and to reserve your spot, visit our <a href="https://provinggroundsjj.sites.zenplanner.com" target="_blank" style="color:var(--red); text-decoration:none;">ZenPlanner portal</a> or call us at <a href="tel:5868948640" style="color:var(--red); text-decoration:none;">586-894-8640</a>.
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ENROLL CTA -->
+  <section>
+    <div class="split">
+      <div class="split-text">
+        <div class="section-eyebrow">Get Started</div>
+        <h2>Your First<br>Class Is Free.</h2>
+        <p style="margin-bottom:32px;">Pick any class from the schedule, come in, and train for free. No commitments, no pressure. Just experience Proving Grounds and see why students drive from all across Macomb County to train here.</p>
+        <div class="btn-group">
+          <a href="https://provinggroundsjj.sites.zenplanner.com/freeTrial.cfm" target="_blank" class="btn btn-primary">Book Free Trial →</a>
+          <a href="https://provinggroundsjj.sites.zenplanner.com/sign-up-now.cfm" target="_blank" class="btn btn-outline">Enroll & Pricing</a>
+        </div>
+      </div>
+      <div class="split-visual">
+        <div class="split-visual-inner">
+          <div style="padding:32px; text-align:center;">
+            <div style="font-size:48px; margin-bottom:20px;">📍</div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:18px; text-transform:uppercase; color:var(--white); margin-bottom:8px;">46825 Hayes Rd</div>
+            <div style="font-size:14px; color:var(--muted); margin-bottom:24px;">Shelby Township, MI 48315</div>
+            <a href="https://maps.google.com/?q=46825+Hayes+Rd+Shelby+Township+MI+48315" target="_blank" class="btn btn-outline" style="font-size:12px;">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer id="pg-footer"></footer>
+<script src="shared.js"></script>
+</body>
+</html>
