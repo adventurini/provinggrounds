@@ -74,12 +74,15 @@ nav {
 }
 
 .nav-logo img {
-  height: 44px;
+  height: 48px;
   width: auto;
-  max-width: min(48vw, 200px);
+  max-width: min(52vw, 220px);
+  aspect-ratio: 1024 / 682;
   object-fit: contain;
+  object-position: left center;
   display: block;
   background: transparent;
+  /* Correct intrinsic ratio (matches file) so the browser downscales cleanly */
 }
 
 .nav-links {
@@ -824,8 +827,10 @@ footer {
 .footer-logo img {
   height: 72px;
   width: auto;
-  max-width: min(100%, 260px);
+  max-width: min(100%, 280px);
+  aspect-ratio: 1024 / 682;
   object-fit: contain;
+  object-position: left center;
   display: block;
   background: transparent;
 }
@@ -1041,8 +1046,8 @@ footer {
   .nav-toggle { display: flex; }
 
   .nav-logo img {
-    height: 36px;
-    max-width: min(44vw, 160px);
+    height: 40px;
+    max-width: min(48vw, 180px);
   }
 
   .hero-content { padding: 60px 20px; }
