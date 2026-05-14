@@ -9,8 +9,8 @@
   --red: #c8102e;
   --red-glow: #e01535;
   --red-dim: #7a0a1c;
-  --white: #f0ede8;
-  --muted: #888880;
+  --white: #faf8f5;
+  --muted: #b8b4ae;
   --gold: #b8a060;
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'Barlow', sans-serif;
@@ -80,7 +80,6 @@ nav {
   object-fit: contain;
   display: block;
   background: transparent;
-  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -477,7 +476,7 @@ h3 {
   letter-spacing: 0.04em;
 }
 
-p { color: #b0aca6; line-height: 1.75; }
+p { color: #d2cec8; line-height: 1.75; }
 
 /* ── DISCIPLINE CARDS ── */
 .disciplines {
@@ -826,7 +825,6 @@ footer {
   object-fit: contain;
   display: block;
   background: transparent;
-  mix-blend-mode: multiply;
 }
 
 .footer-brand p {
