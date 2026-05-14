@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navEl.innerHTML = `
       <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-          <img src="images/logo.png" width="1024" height="682" alt="Proving Grounds Fight Club">
+          <img src="images/logo.png" width="1536" height="1023" alt="Proving Grounds Fight Club">
         </a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-brand">
-            <a href="index.html" class="footer-logo"><img src="images/logo.png" width="1024" height="682" alt="Proving Grounds Fight Club"></a>
+            <a href="index.html" class="footer-logo"><img src="images/logo.png" width="1536" height="1023" alt="Proving Grounds Fight Club"></a>
             <p>Macomb County's premier martial arts academy. Home of Michigan's first Black Belt World Champion. 6,000 sq ft of world-class training.</p>
             <div class="social-links">
               <a href="https://www.facebook.com/profile.php?id=100072875904135" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Proving Grounds on Facebook">

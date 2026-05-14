@@ -77,7 +77,7 @@ nav {
   height: 48px;
   width: auto;
   max-width: min(52vw, 220px);
-  aspect-ratio: 1024 / 682;
+  aspect-ratio: 1536 / 1023;
   object-fit: contain;
   object-position: left center;
   display: block;
@@ -828,7 +828,7 @@ footer {
   height: 72px;
   width: auto;
   max-width: min(100%, 280px);
-  aspect-ratio: 1024 / 682;
+  aspect-ratio: 1536 / 1023;
   object-fit: contain;
   object-position: left center;
   display: block;
