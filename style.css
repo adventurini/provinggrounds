@@ -77,12 +77,12 @@ nav {
   height: 48px;
   width: auto;
   max-width: min(52vw, 220px);
-  aspect-ratio: 1536 / 1023;
+  aspect-ratio: 480 / 320;
   object-fit: contain;
   object-position: left center;
   display: block;
   background: transparent;
-  /* Correct intrinsic ratio (matches file) so the browser downscales cleanly */
+  image-rendering: auto;
 }
 
 .nav-links {
@@ -828,11 +828,12 @@ footer {
   height: 72px;
   width: auto;
   max-width: min(100%, 280px);
-  aspect-ratio: 1536 / 1023;
+  aspect-ratio: 432 / 288;
   object-fit: contain;
   object-position: left center;
   display: block;
   background: transparent;
+  image-rendering: auto;
 }
 
 .footer-brand p {
